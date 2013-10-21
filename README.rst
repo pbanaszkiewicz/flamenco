@@ -14,7 +14,7 @@ Flamenco
 
 Python static pages generator, mostly intended for blogs
 
-* Free software: BSD license
+* Free software: MIT License
 * Documentation: http://flamenco.rtfd.org.
 
 Features
