@@ -10,7 +10,7 @@ Tests for `flamenco` module.
 
 import unittest
 
-from flamenco import flamenco
+#from flamenco import flamenco
 
 
 class TestFlamenco(unittest.TestCase):
