@@ -47,6 +47,9 @@ setup(
     package_dir={'flamenco': 'flamenco'},
     include_package_data=True,
     install_requires=requirements,
+    scripts=[
+        'flamenco/bin/flamenco.py',
+    ],
 
     license="MIT",
     zip_safe=False,
