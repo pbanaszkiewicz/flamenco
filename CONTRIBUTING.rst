@@ -3,7 +3,7 @@ Contributing
 ============
 
 Contributions are welcome, and they are greatly appreciated! Every
-little bit helps, and credit will always be given. 
+little bit helps, and credit will always be given.
 
 You can contribute in many ways:
 
@@ -36,14 +36,15 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-Flamenco could always use more documentation, whether as part of the 
+Flamenco could always use more documentation, whether as part of the
 official Flamenco docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/pbanaszkiewicz/flamenco/issues.
+The best way to send feedback is to file an issue at
+https://github.com/pbanaszkiewicz/flamenco/issues.
 
 If you are proposing a feature:
 
@@ -62,7 +63,9 @@ Ready to contribute? Here's how to set up `flamenco` for local development.
 
     $ git clone git@github.com:your_name_here/flamenco.git
 
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy into a virtualenv. Assuming you have
+  virtualenvwrapper installed, this is how you set up your fork for local
+  development::
 
     $ mkvirtualenv flamenco
     $ cd flamenco/
@@ -77,11 +80,11 @@ Ready to contribute? Here's how to set up `flamenco` for local development.
 5. When you're done making changes, check that your changes pass flake8 and the
 tests, including testing other Python versions with tox::
 
-    $ flake8 flamenco tests
-	  $ python setup.py test
+    # includes tests for python 2.7, 3.3, flake8 and for docs as well
+    # BTW: it installs dependencies on its own
     $ tox
 
-  To get flake8 and tox, just pip install them into your virtualenv. 
+  Remember to run ``tox`` from outside of your virtual environment.
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -100,7 +103,7 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
-3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy. Check 
+3. The pull request should work for Python 2.7, and 3.3. Check
    https://travis-ci.org/pbanaszkiewicz/flamenco/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
@@ -109,4 +112,4 @@ Tips
 
 To run a subset of tests::
 
-	$ python -m unittest tests.test_flamenco
+	$ py.test tests/test_flamenco.py
