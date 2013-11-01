@@ -6,6 +6,14 @@
 Welcome to Flamenco's documentation!
 ======================================
 
+Flamenco is a static pages generator, mostly intended for blogs.
+
+Quick introduction::
+
+  $ pip install flamenco
+  $ flamenco quickgen
+  $ flamenco compile
+
 Contents:
 
 .. toctree::
@@ -13,9 +21,10 @@ Contents:
 
    installation
    usage
-   contributing
-   authors
-   history
+
+   info/contributing
+   info/authors
+   info/history
 
 Indices and tables
 ==================

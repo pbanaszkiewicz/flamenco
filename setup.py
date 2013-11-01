@@ -47,9 +47,11 @@ setup(
     package_dir={'flamenco': 'flamenco'},
     include_package_data=True,
     install_requires=requirements,
-    scripts=[
-        'flamenco/bin/flamenco.py',
-    ],
+    entry_points={
+        "console_scripts": [
+            "flamenco = flamenco.cli:cli",
+        ],
+    },
 
     license="MIT",
     zip_safe=False,
