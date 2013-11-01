@@ -1,15 +1,24 @@
 language: python
-python: 2.7
+python:
+    - "2.7"
+    - "3.3"
 env:
     - TOX_ENV=py27
     - TOX_ENV=py33
     - TOX_ENV=docs
     - TOX_ENV=flake8
 
+# this exclusion will ensure that no additional python 3.3 will get installed
+# by tox
+matrix:
+    exclude:
+        - python: "3.3"
+
 install:
     - pip install tox coveralls
 
 script:
+    #- py.test --cov flamenco
     - tox -e $TOX_ENV
 
 after_success:
